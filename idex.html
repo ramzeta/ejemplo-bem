@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ejemplo de BEM</title>
-  <style>
-    .card {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
-    }
-    .card__header {
-      background-color: #eee;
-      padding: 10px;
-    }
-    .card__title {
-      margin: 0;
-    }
-    .card__body {
-      padding: 10px;
-    }
-    .card__text {
-      margin: 0;
-    }
-    .card__footer {
-      background-color: #eee;
-      padding: 10px;
-      text-align: right;
-    }
-    .card__button {
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      padding: 5px 10px;
-    }
-    .card__button--primary {
-      background-color: blue;
-      color: #fff;
-      margin-right: 10px;
-    }
-    .card__button--secondary {
-      background-color: gray;
-      color: #fff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Ejemplo de BEM</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .card__header {
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        .card__title {
+            margin: 0;
+        }
+
+        .card__body {
+            padding: 10px;
+        }
+
+        .card__text {
+            margin: 0;
+        }
+
+        .card__footer {
+            background-color: #eee;
+            padding: 10px;
+            text-align: right;
+        }
+
+        .card__button {
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .card__button--primary {
+            background-color: blue;
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .card__button--secondary {
+            background-color: gray;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-  <div class="card">
-    <div class="card__header">
-      <h2 class="card__title">Título de la tarjeta</h2>
+    <div class="card">
+        <div class="card__header">
+            <h2 class="card__title">Título de la tarjeta</h2>
+        </div>
+        <div class="card__body">
+            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod dui vitae nibh
+                placerat, at varius justo maximus.</p>
+        </div>
+        <div class="card__footer">
+            <button class="card__button card__button--primary">Botón primario</button>
+            <button class="card__button card__button--secondary">Botón secundario</button>
+        </div>
     </div>
-    <div class="card__body">
-      <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod dui vitae nibh placerat, at varius justo maximus.</p>
-    </div>
-    <div class="card__footer">
-      <button class="card__button card__button--primary">Botón primario</button>
-      <button class="card__button card__button--secondary">Botón secundario</button>
-    </div>
-  </div>
 </body>
 </html>
